@@ -22,6 +22,7 @@ $(document).ready(function(){
 	winCount = 0;
 	losses = $(".loss");
 	lossCount = 0;
+	result = $(".status");
 
 // Start of game, rand num gen on randGoal and cache
 // Assign values to crystals 	
@@ -49,13 +50,13 @@ $(document).ready(function(){
 			sum = (arit + clearNum.n);
 			score.html(sum);
 			if (sum == randGoal) {
-				alert('Success!!');
+				result.html('勝ち！！Success!!');
 				winCount++;
 				wins.html(winCount);
 				start();
 			}
 			else if (sum > randGoal) {
-				alert('Too much...');
+				result.html('負け。。。Too much...');
 				lossCount++;
 				losses.html(lossCount);
 				start();
@@ -67,13 +68,13 @@ $(document).ready(function(){
 			sum = (arit + redNum.n);
 			score.html(sum);
 			if (sum == randGoal) {
-				alert('Success!!');
+				result.html('勝ち！！Success!!');
 				winCount++;
 				wins.html(winCount);
 				start();
 			}
 			else if (sum > randGoal) {
-				alert('Too much...');
+				result.html('負け。。。Too much...');
 				lossCount++;
 				losses.html(lossCount);
 				start();
@@ -86,13 +87,13 @@ $(document).ready(function(){
 			sum = (arit + violetNum.n);
 			score.html(sum);
 			if (sum == randGoal) {
-				alert('Success!!');
+				result.html('勝ち！！Success!!');
 				winCount++;
 				wins.html(winCount);
 				start();
 			}
 			else if (sum > randGoal) {
-				alert('Too much...');
+				result.html('負け。。。Too much...');
 				lossCount++;
 				losses.html(lossCount);
 				start();
@@ -105,13 +106,13 @@ $(document).ready(function(){
 			sum = (arit + greenNum.n);
 			score.html(sum);
 			if (sum == randGoal) {
-				alert('Success!!');
+				result.html('勝ち！！Success!!');
 				winCount++;
 				wins.html(winCount);
 				start();
 			}
 			else if (sum > randGoal) {
-				alert('Too much...');
+				result.html('負け。。。Too much...');
 				lossCount++;
 				losses.html(lossCount);
 				start();

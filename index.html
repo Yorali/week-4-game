@@ -3,8 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Crystal Collector</title>
-	<style type="text/css" src="assets/css/reset.css"></style>
-	<style type="text/css" src="assets/css/style.css"></style>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script type="text/javascript" src="assets/javascript/game.js"></script>
 
@@ -18,12 +19,12 @@
 		</div>
 
 		<div class="instructions">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem rerum illum, officiis quaerat ratione odit sunt non repellat libero consequatur doloremque nulla laborum, in dolorem, sequi accusantium debitis magnam, perspiciatis.</p>
+			<p>Click on the gems to add value to the current score until the goal below is reached. Do not exceed it!</p>
 		</div>
 
 		<div class="game_stats">
 			<div>
-				<h1 id="numGoal"></h1>
+				<h1 id="numGoal" class="numGoal"></h1>
 			</div>
 			<div class="winloss">
 				<div>
@@ -37,18 +38,18 @@
 			</div>
 		</div>
 
-		<div class="crystals">
-			<div id="crystal-1">
-				<img src="assets/images/clear.jpg">
+		<div class="crystal-gem">
+			<div id="crystal-1" class="crystals">
+				<img class= 'gems cryClear'src="assets/images/clear.png">
 			</div>
-			<div id="crystal-2">
-				<img src="assets/images/red.jpg">
+			<div id="crystal-2" class="crystals">
+				<img class= 'gems cryRed'src="assets/images/red.jpg">
 			</div>
-			<div id="crystal-3">
-				<img src="assets/images/violet.jpg">
+			<div id="crystal-3" class="crystals">
+				<img class= 'gems cryVio'src="assets/images/violet.jpg">
 			</div>
-			<div id="crystal-4">
-				<img src="assets/images/green.jpg">
+			<div id="crystal-4" class="crystals">
+				<img class= 'gems cryGre'src="assets/images/green.jpg">
 			</div>
 		</div>
 
@@ -57,7 +58,10 @@
 				Current score:
 			</div>
 			<div class="score">
-				<h2 id="score">0</h2>
+				<h2 id="score" class="counter">0</h2>
+			</div>
+			<div class="status">
+				
 			</div>
 		</div>
 

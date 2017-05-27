@@ -1,3 +1,48 @@
-.wrapper {
+* {
+	box-sizing: border-box;
+}
+
+body {
 	text-align: center;
+	width: 906px;
+	margin: 0 auto;
+	background-color: aliceblue;
+}
+
+.header {
+	font-size: 36px;
+}
+
+.instructions {
+	padding: 15px;
+}
+
+#numGoal {
+	font-size: 30px;
+	padding-bottom: 15px
+}
+
+.win, .loss {
+	font-size: 18px;
+	padding: 5px;
+}
+
+.crystals {
+	width: 24%;
+	display: inline-block;
+	padding-bottom: 20px;
+}
+
+.gems {
+	width: 70%;
+	border: 2px solid;
+}
+
+.counter {
+	font-size: 30px;
+	padding: 20px
+}
+
+.status {
+	font-size: 42px;
 }
